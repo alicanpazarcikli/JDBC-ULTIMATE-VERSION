@@ -1,0 +1,19 @@
+Java Database Connectivity
+-comes with JDK,works with RDBMS
+-IT IS UNDER java.sql package
+-it has set of Interfaces and classes to work with RDBMS
+--jdbc:oracle:thin:@ec2-54-159-174-62.compute-1.amazonaws.com:1521:xe
+
+--jdbc-->connection using java
+--oracle-->data base vendor(RDBMS)
+--thin---> one type oracle driver
+--IP address--->host name or ip(@ec2-54-159-174-62.compute-1.amazonaws.com)
+--1521 is the port number which is unique to oracle databases
+--xe is unique identifier for oracle databases
+
+3 important interfaces
+1=Connection represents the connection with specific database. DriverManager will look att he
+URL,username and password  you provided and connect.
+2-Statement represents a static SQL statement.using the statement object
+and its methods , i can execute a SQL query and get the result.
+3- ResultSet will store the query result(
